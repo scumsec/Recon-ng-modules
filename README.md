@@ -73,15 +73,6 @@ Module retrieves MX record for each domain using `mx` search filter and updates 
 ##### recon/hosts-ports/censys_a
 Module retrieves A record for each host using `a` search filter and updates the `ports` with the results. !!!!!!!!!!!!!! 
 
-## DomainBigData modules
-Website: http://domainbigdata.com/
-##### recon/domains-domains/domainbigdata_domain
-Find domains 
-##### recon/domains-domains/domainbigdata_org
-Find domains
-
-###### DomainBigData changed their markup and my parsers doesn't work anymore. Modules will by updated later.
-
 ## ZoomEye API modules
 Website: https://www.zoomeye.org/
 ##### recon/hosts-hosts/zoomeye_ip
