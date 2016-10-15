@@ -74,9 +74,9 @@ Website: https://censys.io/
 ##### recon/companies-hosts/censys_org
 Module searches for hosts and ports using `autonomous_system.organization` search filter. Updates the `hosts` and the `ports` tables with the results.
 ##### recon/domains-hosts/censys_mx
-Module retrieves MX record for each domain using `mx` search filter and updates the `hosts` table with the results.!!!!!
+Module retrieves MX record for each domain using `mx` search filter and updates the `hosts` table with the results.
 ##### recon/hosts-ports/censys_a
-Module retrieves A record for each host using `a` search filter and updates the `ports` with the results. !!!!!!!!!!!!!! 
+Module retrieves A record for each host using `a` search filter and updates the `ports` with the results.
 
 ## ZoomEye API modules
 Website: https://www.zoomeye.org/
