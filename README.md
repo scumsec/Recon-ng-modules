@@ -8,7 +8,7 @@ This project includes some modules from multiple sources and projects such as [P
 ##### [import/nmap_xml](https://github.com/praetorian-inc/pentestly/blob/master/modules/import/nmap_xml.py)
 Import from [nmap](http://nmap.org/) XML output. Module updates `hosts` and `ports` tables with the results.
 ##### import/theharvester_xml
-Import from [theHarvester](https://github.com/laramies/theHarvester) (by @laramies) XML output. Module updates `contacts` table with emails, found by theHarvester and try to resolve name of contact:
+Import from [theHarvester](https://github.com/laramies/theHarvester) (by @laramies) XML output. Module updates `contacts` table with emails, found by theHarvester and tries to resolve name of contact:
 >john.smith@example.com -> John Smith
 
 >john.d.smith@example.com -> John D Smith
@@ -16,15 +16,15 @@ Import from [theHarvester](https://github.com/laramies/theHarvester) (by @larami
 
 Additionaly, module updates `hosts` table with hosts and virtual hosts, found by theHarvester. If theHarvester resolved hostname to IP address, module adds them both. Otherwise, module adds only the hostname.
 ##### import/simplyemail_json
-Import from [SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail) (by @killswitch-GUI) JSON output. Module updates `contacts` table with emails, found by SimplyEmail and try to resolve name of contact.
+Import from [SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail) (by @killswitch-GUI) JSON output. Module updates `contacts` table with emails, found by SimplyEmail and tries to resolve name of contact.
 
 ## Modules based on vk.com API
 Website: https://vk.com/dev
 ##### recon/companies-contacts/vk_companies
-Find employees by company name on vk.com. Module uses [users.search](https://vk.com/dev/users.search) method of VK API with `company` parameter to find all employees by company name.
+Finds employees by company name on vk.com. Module uses [users.search](https://vk.com/dev/users.search) method of VK API with `company` parameter to find all employees by company name.
 
 ##### recon/domains-contacts/vk_news
-Find emails by company domain on vk.com in 1000 last posts. Module uses [newsfeed.search](https://vk.com/dev/newsfeed.search) method of VK API with `q` parameter to find email addresses by domain and try to resolve name of contact.
+Finds emails by company domain on vk.com in 1000 last posts. Module uses [newsfeed.search](https://vk.com/dev/newsfeed.search) method of VK API with `q` parameter to find email addresses by domain and tries to resolve name of contact.
 >Example
 
 >domain: mysite.com
@@ -33,19 +33,24 @@ Find emails by company domain on vk.com in 1000 last posts. Module uses [newsfee
 
 ### Some random modules
 ##### [recon/companies-contacts/xing_employees](https://github.com/mhelwig/xing_employees/blob/master/xing_employees.py) by @mhelwig
-Website: 
+Website: https://www.xing.com/
 ##### recon/companies-hosts/shodan_org
-Find hosts and open ports by `org` search operator using Shodan API. Updates `hosts` and `ports` tables with the results.
+Finds hosts and open ports by `org` search operator using Shodan API. Updates `hosts` and `ports` tables with the results.
 ##### recon/contacts-credentials/hacked_emails
-Module uses hacked-emails.com API to find compromised credentials. Website: http://hacked-emails.com/
+Module uses hacked-emails.com API to find compromised credentials. 
+Website: http://hacked-emails.com/
 ##### recon/contacts-profiles/vibeapp
-Module works with VibeApp API which is the same as FullContact API. Module finds profiles. Website: http://vibeapp.co
+Module works with VibeApp API which is the same as FullContact API. Module finds profiles. 
+Website: http://vibeapp.co
 ##### recon/domains-contacts/email_format
-Module scrapes email-format.com for emails and try to resolve name of contact. Website: http://email-format.com
+Module scrapes email-format.com for emails and tries to resolve name of contact. 
+Website: http://email-format.com
 ##### recon/domains-contacts/emailhunter
-Module harvests emails using EmailHunter API and try to resolve name of contact. Website: https://emailhunter.co/
+Module harvests emails using EmailHunter API and tries to resolve name of contact. 
+Website: https://emailhunter.co/
 ##### [recon/domains-hosts/baidu_site](https://github.com/F4l13n5n0w/recon-ng-baidu_site-module-rewrite/blob/master/baidu_site.py) by @F4l13n5n0w
-Module scrapes hosts from Baidu Search Engine. Website: 
+Module scrapes hosts from Baidu Search Engine. 
+Website: http://www.baidu.com/
 ##### [recon/hosts-netblocks/arin](https://github.com/ztgrace/recon_scripts/blob/master/arin.py) by @ztgrace
 Module uses ARIN API to search for netblocks and companies by IP address.
 
@@ -67,7 +72,7 @@ Renamed module from standard repository
 ## Censys API modules
 Website: https://censys.io/
 ##### recon/companies-hosts/censys_org
-Module searchs for hosts and ports using `autonomous_system.organization` search filter. Updates the `hosts` and the `ports` tables with the results.
+Module searches for hosts and ports using `autonomous_system.organization` search filter. Updates the `hosts` and the `ports` tables with the results.
 ##### recon/domains-hosts/censys_mx
 Module retrieves MX record for each domain using `mx` search filter and updates the `hosts` table with the results.!!!!!
 ##### recon/hosts-ports/censys_a
@@ -76,11 +81,11 @@ Module retrieves A record for each host using `a` search filter and updates the 
 ## ZoomEye API modules
 Website: https://www.zoomeye.org/
 ##### recon/hosts-hosts/zoomeye_ip
-Find ports by IP address using ZoomEye API
+Finds ports by IP address using ZoomEye API
 ##### recon/netblocks-hosts/zoomeye_net
-Find hosts and ports using ZoomEye API
+Finds hosts and ports using ZoomEye API
 ##### recon/domains-hosts/zoomeye_hostname
-Find hosts by hostname using ZoomEye API
+Finds hosts by hostname using ZoomEye API
 
 >#### How to get access_token?
 >
@@ -89,7 +94,7 @@ Find hosts by hostname using ZoomEye API
 >~~~
 
 # Keys
-For solving keys file problem just add manualy these keys:
+To solve the problem with keys file just add manualy these keys:
 - `zoomeye_key`
 - `vibeapp_key`
 - `vk_key`
