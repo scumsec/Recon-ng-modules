@@ -6,9 +6,9 @@ This project includes some modules from multiple sources and projects such as [P
 ## New import modules
  
 ##### [import/nmap_xml](https://github.com/praetorian-inc/pentestly/blob/master/modules/import/nmap_xml.py)
-Import from [nmap](http://nmap.org/) XML output. Module updates `hosts` and `ports` tables with the results.
+Imports from [nmap](http://nmap.org/) XML output. Module updates `hosts` and `ports` tables with the results.
 ##### import/theharvester_xml
-Import from [theHarvester](https://github.com/laramies/theHarvester) (by @laramies) XML output. Module updates `contacts` table with emails, found by theHarvester and tries to resolve name of contact:
+Imports from [theHarvester](https://github.com/laramies/theHarvester) (by @laramies) XML output. Module updates `contacts` table with emails, found by theHarvester and tries to resolve name of contact:
 >john.smith@example.com -> John Smith
 
 >john.d.smith@example.com -> John D Smith
@@ -65,7 +65,7 @@ SPF record (Sender Policy Framework)
 ## ThreatCrowd API modules
 Website: https://www.threatcrowd.org/
 ##### recon/domains-domains/threatcrowd_domain
-Search for domains registered by same email address of registrant
+Searches for domains registered by same email address of registrant
 ##### recon/domains-hosts/threatcrowd_api
 Renamed module from standard repository
 
