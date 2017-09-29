@@ -45,3 +45,12 @@ cp zoomeye_ip.py ~/.recon-ng/modules/recon/hosts-hosts
 
 mkdir -p ~/.recon-ng/modules/recon/netblocks-hosts
 cp zoomeye_net.py ~/.recon-ng/modules/recon/netblocks-hosts
+
+for key in `echo "censysio_id
+censysio_secret
+emailhunter_key
+vibeapp_key
+vk_key
+zoomeye_key"`; do
+	echo "INSERT INTO keys (name) VALUES (\"$key\");" | sqlite3 ~/.recon-ng/keys.db
+done
