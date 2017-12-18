@@ -1,6 +1,7 @@
 from recon.core.module import BaseModule
 import json
 
+# via https://github.com/PaulSec/API-dnsdumpster.com
 from dnsdumpster.DNSDumpsterAPI import DNSDumpsterAPI
 
 class Module(BaseModule):
@@ -8,7 +9,7 @@ class Module(BaseModule):
     meta = {
         'name': 'DNSDumpster Record Retriever',
         'author': 'jose nazario @jnazario',
-        'description': 'Retrieves the DNS records for a domain. Updates the \'hosts\' table with the results.',
+        'description': 'Retrieves the DNS records for a domain using the DNSDumpster site. Updates the \'hosts\' table with the results.',
         'query': 'SELECT DISTINCT domain FROM domains WHERE domain IS NOT NULL',
     }
 
